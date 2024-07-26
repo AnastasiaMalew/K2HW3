@@ -1,4 +1,4 @@
-public class BuyTransport {
+public class BuyTransport implements Transport {
     public String modelName;
     public int wheelsCount;
 
