@@ -1,12 +1,12 @@
-public class Car extends BuyTransport{
-    public Car(String modelName, int wheelCount) {
-        super(modelName, wheelCount);
+public class Car extends WheeledTransport {
+
+    public Car(String modelName) {
+        super(modelName, 2);
     }
 
-    public String toString() {
-        return String.format("Car: modelName - %s, wheelsCount - %s ",
-                modelName, wheelsCount);
+    public Car(String modelName, int wheelsCount) {
+        super(modelName, wheelsCount);
     }
-
-
 }
+
+

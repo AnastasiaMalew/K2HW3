@@ -1,26 +1,27 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    private static final Car[] cars = {
-            new Car("car1", 4),
-            new Car("car2", 4)
-    };
-    private static final Bicycle[] bicycles = {
-            new Bicycle("bicycle1", 2),
-            new Bicycle("bicycle2", 2)
-    };
-    private static final Truck[] trucks = {
-            new Truck("truck1", 6),
-            new Truck("truck2", 8)
-    };
     public static void main(String[] args) {
+        Car car = new Car("car1");
+        Car car2 = new Car("car2");
+
+        Truck truck = new Truck("truck1");
+        Truck truck2 = new Truck("truck2", 8);
+
+        Bicycle bicycle = new Bicycle("bicycle1");
+        Bicycle bicycle2 = new Bicycle("bicycle2");
+
+        Transport[] transports = {
+                car,
+                car2,
+                truck,
+                truck2,
+                bicycle,
+                bicycle2
+        };
 
         ServiceStation station = new ServiceStation();
-                station.check(cars[1]);
-                station.check(bicycles[1]);
-                station.check(trucks[1]);
-                station.check(cars[2]);
-                station.check(bicycles[2]);
-                station.check(trucks[2]);
+
+        for (Transport transport : transports) {
+            station.check(transport);
+        }
     }
 }

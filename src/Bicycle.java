@@ -1,12 +1,11 @@
-public class Bicycle extends BuyTransport {
-    public Bicycle(String modelName, int wheelCount) {
-        super(modelName, wheelCount);
+public class Bicycle extends WheeledTransport {
+
+    public Bicycle(String modelName) {
+        super(modelName, 2);
     }
 
-    public String toString() {
-        return String.format("Bicycle: modelName - %s, wheelsCount - %s ",
-                modelName, wheelsCount);
+    public Bicycle(String modelName, int wheelsCount) {
+        super(modelName, wheelsCount);
     }
-
-    }
+}
 

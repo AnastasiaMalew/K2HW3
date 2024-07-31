@@ -1,15 +1,11 @@
-public class Truck extends BuyTransport {
-        public Truck(String modelName, int wheelCount) {
-            super(modelName, wheelCount);
-        }
+public class Truck extends WheeledTransport {
 
-        public String toString() {
-            return String.format("Truck: modelName - %s, wheelsCount - %s ",
-                    modelName, wheelsCount);
-        }
+    public Truck(String modelName) {
+        super(modelName, 2);
+    }
 
-    public String modelName;
-    public int wheelsCount;
-
-
+    public Truck(String modelName, int wheelsCount) {
+        super(modelName, wheelsCount);
+    }
 }
+

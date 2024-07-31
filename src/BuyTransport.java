@@ -1,4 +1,4 @@
-public class BuyTransport implements Transport {
+public class BuyTransport {
     public String modelName;
     public int wheelsCount;
 
@@ -12,4 +12,3 @@ public class BuyTransport implements Transport {
         System.out.println("Проверяем прицеп");
     }
 }
-
